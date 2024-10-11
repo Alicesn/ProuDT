@@ -239,8 +239,8 @@ def run_experiment_trials(name):
             else:
                 epochs_no_improve += 1
             if epochs_no_improve >= patience:
-                print("Early stopping!", flush=True)
-                print(f"Depth {depthValue}, optimal Epoch {epoch}", flush=True)
+                # print("Early stopping!", flush=True)
+                # print(f"Depth {depthValue}, optimal Epoch {epoch}", flush=True)
                 optimal_epoch = epoch
                 break
 
@@ -287,7 +287,7 @@ def run_experiment_trials(name):
         results_df.to_csv(f"optModel/{name}/{name}_all_trials_results.csv", index=False)
 
         print(
-            f"trial: {trial+1},seed:{seed},name: {name}, depth: {depthValue}, optimal epoch: {optimal_epoch}, train accuracy:{train_accuracy}, test accuracy:{test_accuracy},train_f1_macro:{train_f1_macro},test_f1_macro:{test_f1_macro},train time: {train_time}, test accuracy time: {test_accuracy_time}",
+            f"trial: {trial+1},seed:{seed},name: {name}, depth: {depthValue}, train accuracy:{train_accuracy}, test accuracy:{test_accuracy},train_f1_macro:{train_f1_macro},test_f1_macro:{test_f1_macro},train time: {train_time}, test accuracy time: {test_accuracy_time}",
             flush=True,
         )
 

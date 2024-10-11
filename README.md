@@ -21,7 +21,8 @@ Run `experiment.ipynb` to implement the ProuDT. <br>
 In the paper, the experiments include 10 trials in default settings. You can specify any dataset name (see `config.py`) to reproduce the result. For example,
 ` 
 name = "Iris"
-`. All trial results and statistics will be saved in CSV files.
+`. All trial results and statistics will be saved in CSV files. 
+
 
 ## Acknowledgments
 
